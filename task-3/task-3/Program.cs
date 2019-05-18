@@ -18,12 +18,12 @@ namespace task_3
             if (r = (y >= Math.Pow(x, 2) && y >= 0 && y <= 1 && y <= Math.Exp(-x) && y <= Math.Exp(x)) == true)//проверка условия
             {
                 u = x + y;
-                Console.WriteLine($"Точки x = {x} и y = {y} принадлежат заштрихованной части плосткости; u = {u}");
+                Console.WriteLine($"Точки x = {x} и y = {y} принадлежат заштрихованной части плоскости; u = {u}");
             }
             else
             {
                 u = x - y;
-                Console.WriteLine($"Точки x = {x} и y = {y} не принадлежат заштрихованной части плосткости; u = {u}");
+                Console.WriteLine($"Точки x = {x} и y = {y} не принадлежат заштрихованной части плоскости; u = {u}");
             }
             Console.ReadKey();
         }
