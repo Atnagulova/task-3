@@ -12,10 +12,10 @@ namespace task_3
         {
 
             double x, y, u; bool r;
-            x = WriteDouble("Введите координату x: ");
-            y = WriteDouble("Введите координату y: ");
+            x = WriteDouble("Введите координату x: ");//присваивание 
+            y = WriteDouble("Введите координату y: ");//присваивание 
 
-            if (r = (y >= Math.Pow(x, 2) && y >= 0 && y <= 1 && y <= Math.Exp(-x) && y <= Math.Exp(x)) == true)
+            if (r = (y >= Math.Pow(x, 2) && y >= 0 && y <= 1 && y <= Math.Exp(-x) && y <= Math.Exp(x)) == true)//проверка условия
             {
                 u = x + y;
                 Console.WriteLine($"Точки x = {x} и y = {y} принадлежат заштрихованной части плосткости; u = {u}");
@@ -27,9 +27,8 @@ namespace task_3
             }
             Console.ReadKey();
         }
-        public static double WriteDouble(string t)
+        public static double WriteDouble(string t)//вспомогательная фукция ввода вещественного числа
         {
-
             bool ok; double a;
             do
             {
