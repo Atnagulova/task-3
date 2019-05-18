@@ -37,7 +37,7 @@ namespace task_3
                 string buf = Console.ReadLine();
                 ok = double.TryParse(buf, out a);
                 if (!ok)
-                    Console.WriteLine("Ошибка! Введите число");
+                    Console.WriteLine("Ошибка, введите число");
             } while (!ok);
             return a;
         }
